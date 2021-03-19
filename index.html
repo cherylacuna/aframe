@@ -24,12 +24,47 @@
     <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
   </head>
   <body>
-    <a-scene>
-      <a-entity environment="preset: goaland; groundColor: #445; grid: cross">
+    <a-scene fog="type: linear; color: #e82626">
+          <a-entity environment="preset: goaland; groundColor: #301213; horizonColor: #6f0101; groundColor2: #330c3b; dressingColor: #4e1344; skyType: gradient; skyColor: #130637; shadowSize: 10.67; lightPosition: 0 2.67 -0.2; fog: 0.65; ground: canyon; groundTexture: walkernoise; dressing: arches; dressingAmount: 90; dressingScale: 19.84; dressingVariance: 2.83 5.3 2.71" visible="">
 
-      </a-entity>
+                <a-entity class="environment" position="0 50 0" light="type: hemisphere; color: #a58f8f; intensity: 0.6; groundColor: #1d5446" visible=""></a-entity>
+
+                <a-entity class="environment" position="0.1 4 0.56" light="intensity: 0.6; shadowCameraLeft: -10; shadowCameraBottom: -10; shadowCameraRight: 10; shadowCameraTop: 10; type: point" visible="">
+                </a-entity>
+
+              <a-entity rotation="-90 0 0" class="environmentGround environment" visible="" scale="1 1 0.81" shadow="cast: false; receive: false">
+            </a-entity>
+
+            <a-entity class="environmentDressing environment" visible="">
+
+            </a-entity><a-sky radius="200" theta-length="110" class="environment" material="shader: gradientshader; topColor: #4c2020; bottomColor: #dbc2c2" visible="" geometry="">
+                      </a-sky>
+            <a-entity class="environment" position="0 50 0" light="type: hemisphere; color: #89829b; intensity: 0.6; groundColor: #301213" visible=""></a-entity><a-entity class="environment" position="0 2.67 -0.2" light="intensity: 0.6; shadowCameraLeft: -10.67; shadowCameraBottom: -10.67; shadowCameraRight: 10.67; shadowCameraTop: 10.67; type: point" visible=""></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" visible="" scale="1 1 0.81" shadow="cast: false; receive: false"></a-entity><a-entity class="environmentDressing environment" visible=""></a-entity><a-sky radius="200" theta-length="110" class="environment" material="shader: gradientshader; topColor: #130637; bottomColor: #dbc2c2" visible="" geometry=""></a-sky><a-entity class="environment" position="0 50 0" light="type: hemisphere; color: #89829b; intensity: 0.6; groundColor: #301213" visible=""></a-entity><a-entity class="environment" position="0 2.67 -0.2" light="intensity: 0.6; shadowCameraLeft: -10.67; shadowCameraBottom: -10.67; shadowCameraRight: 10.67; shadowCameraTop: 10.67; type: point" visible=""></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" visible="" scale="1 1 0.81" shadow="cast: false; receive: false"></a-entity><a-entity class="environmentDressing environment" visible=""></a-entity><a-sky radius="200" theta-length="110" class="environment" material="shader: gradientshader; topColor: #130637; bottomColor: #dbc2c2" visible="" geometry=""></a-sky></a-entity>
 
 
-    </a-scene>
+
+            <a-sphere position="10.94354 0.69814 5.23139" color="#00ff40" scale="0.6 0.6 0.6" material="" geometry="" event-set__enter="_event: mouseenter; _target: #sphereoneText; visible: true" event-set__leave="_event: mouseleave; _target: #sphereoneText; visible: false">
+                <a-text id="sphereoneText" value="attribute no blame and strive to absolve only resentment" align="center" color="#FFF" visible="false" position="0 -0.55 0.55" geometry="primitive: plane; width: 1.75" material="color: #333" text=""></a-text>
+            </a-sphere>
+
+
+            <a-sphere position="17.30086 0.95641 -23.14116" color="#00ff40" scale="0.6 0.6 0.6" material="" geometry="" event-set__enter="_event: mouseenter; _target: #spheretwoText; visible: true" event-set__leave="_event: mouseleave; _target: #spheretwoText; visible: false">
+                <a-text id="spheretwoText" value="love is not the satisfaction of chemical reaction but" align="center" color="#FFF" visible="false" position="0 -0.55 0.55" geometry="primitive: plane; width: 1.75" material="color: #333" text=""></a-text>
+            </a-sphere>
+
+            <a-sphere position="19.48504 0.95641 -36.18384" color="#00ff40" scale="0.6 0.6 0.6" material="" geometry="" event-set__enter="_event: mouseenter; _target: #spherethreeText; visible: true" event-set__leave="_event: mouseleave; _target: #spherethreeText; visible: false">
+                <a-text id="spherethreeText" value="the sensation of neural networks quantum" align="center" color="#FFF" visible="false" position="0 -0.55 0.55" geometry="primitive: plane; width: 1.75" material="color: #333" text=""></a-text>
+            </a-sphere>
+
+            <a-sphere position="20.48504 0.95641 -43.18384" color="#00ff40" scale="0.6 0.6 0.6" material="" geometry="" event-set__enter="_event: mouseenter; _target: #spherefourText; visible: true" event-set__leave="_event: mouseleave; _target: #spherefourText; visible: false">
+                <a-text id="spherefourText" value="entangled electromagnetic radiation" align="center" color="#FFF" visible="false" position="0 -0.55 0.55" geometry="primitive: plane; width: 1.75" material="color: #333" text=""></a-text>
+            </a-sphere>
+
+
+    <a-camera camera="" rotation="-12.948846169956608 56.26445548184685 0" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
+          <a-cursor material="color: #5e0330; blending: multiply" raycaster="" cursor="" geometry="radiusOuter: 0.286; radiusInner: 0.09"></a-cursor>
+    </a-camera>
+
+        <div class="a-loader-title" style="display: none;"></div></a-scene>
   </body>
 </html>
