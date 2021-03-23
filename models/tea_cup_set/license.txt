@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tea Cup Set
+* source:	https://sketchfab.com/3d-models/tea-cup-set-525cc66355c64deabbb733bdb4938891
+* author:	harpreetHK (https://sketchfab.com/harpreetHK)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tea Cup Set" (https://sketchfab.com/3d-models/tea-cup-set-525cc66355c64deabbb733bdb4938891) by harpreetHK (https://sketchfab.com/harpreetHK) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
