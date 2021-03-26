@@ -27,6 +27,9 @@
 
   </head>
   <body>
+    <audio loop autoplay>
+        <source src="audio/bobby.mp3" type="audio/filetype">
+    </audio>
 
     <a-scene fog="type: linear; color: #e82626">
 
@@ -39,12 +42,13 @@
           <a-asset-item id="wandModel" src="models/magic_wand/scene.gltf"></a-asset-item>
           <a-asset-item id="teaModel" src="models/tea_cup_set/scene.gltf"></a-asset-item>
           <a-asset-item id="shibaModel" src="models/shiba/scene.gltf"></a-asset-item>
+          <a-sound src=“url(audio/bobby.mp3)”><a-sound>
 
 
 
       </a-assets>
 
-            <a-entity gltf-model="models/shiny_forest/scene.gltf" modify-materials="" position="0 -3.12144 -23.35185" scale="0.5 0.5 0.5" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 50000"></a-entity>
+            <a-entity gltf-model="models/shiny_forest/scene.gltf" modify-materials="" position="0 -3.12144 -23.35185" scale="0.5 0.5 0.5" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 50000" sound="src: url(bobby.mp3); autoplay: true"></a-entity>
 
             <a-entity gltf-model="#milkModel" position="12 1.2 -23" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000" scale="8 8 8" material="" geometry="" event-set__enter="_event: mouseenter; _target: #milkText; visible: true" event-set__leave="_event: mouseleave; _target: #milkText; visible: false">
                 <a-text id="milkText" value="attribute no blame and strive to absolve only resentment" align="center" color="#fff" visible="false" position="0.008 0.279 0.041" scale=".1 .1 .1" geometry="primitive: plane; width: 0" material="blending: subtractive; color: #530738; opacity: 0.4" text=""></a-text>
