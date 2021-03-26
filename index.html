@@ -37,6 +37,9 @@
           <a-asset-item id="milkModel" src="models/cute_milkshake/scene.gltf"></a-asset-item>
           <a-asset-item id="pengyModel" src="models/cute_penguin/scene.gltf"></a-asset-item>
           <a-asset-item id="wandModel" src="models/magic_wand/scene.gltf"></a-asset-item>
+          <a-asset-item id="teaModel" src="models/tea_cup_set/scene.gltf"></a-asset-item>
+          <a-asset-item id="shibaModel" src="models/shiba/scene.gltf"></a-asset-item>
+
 
 
       </a-assets>
@@ -57,6 +60,10 @@
 
             <a-entity gltf-model="#wandModel" position="-4.2 -1 -10" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000" scale="0.6 0.6 0.6" material="" geometry="" event-set__enter="_event: mouseenter; _target: #wandText; visible: true" event-set__leave="_event: mouseleave; _target: #wandText; visible: false">
                 <a-text id="wandText" value="blessed are the meek for they will inherit the earth" align="center" color="#fff" visible="false" position="0 2.3 1" geometry="primitive: plane; width: 0" material="blending: subtractive; color: #530738; opacity: 0.4" text=""></a-text>
+            </a-entity>
+
+            <a-entity gltf-model="#teaModel" position="-10.2 1.5 -16" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000" scale="0.2 0.2 0.2" material="" geometry="" event-set__enter="_event: mouseenter; _target: #teaText; visible: true" event-set__leave="_event: mouseleave; _target: #teaText; visible: false">
+                <a-text id="teaText" value="the Fall is in itself already its own self sublation the wound already its own healing" align="center" color="#fff" visible="false" position="0 2.3 1" geometry="primitive: plane; width: 0" material="blending: subtractive; color: #530738; opacity: 0.4" text=""></a-text>
             </a-entity>
 
             <a-sky color="#ECECEC"></a-sky>
