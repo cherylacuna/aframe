@@ -27,48 +27,29 @@
 
   </head>
   <body>
-    <audio loop autoplay>
-        <source src="audio/bobby.mp3" type="audio/filetype">
-    </audio>
 
     <a-scene fog="type: linear; color: #e82626">
 
       <a-assets>
 
-          <a-asset-item id="forestModel" src="models/shiny_forest/scene.gltf"></a-asset-item>
-          <a-asset-item id="cuteModel" src="models/cute_creature1/scene.gltf"></a-asset-item>
-          <a-asset-item id="milkModel" src="models/cute_milkshake/scene.gltf"></a-asset-item>
-          <a-asset-item id="pengyModel" src="models/cute_penguin/scene.gltf"></a-asset-item>
-          <a-asset-item id="wandModel" src="models/magic_wand/scene.gltf"></a-asset-item>
-          <a-asset-item id="teaModel" src="models/tea_cup_set/scene.gltf"></a-asset-item>
-          <a-asset-item id="shibaModel" src="models/shiba/scene.gltf"></a-asset-item>
-          <a-sound src=“url(audio/bobby.mp3)”><a-sound>
+          <a-asset-item id="model-one" src="models/model/model.obj"></a-asset-item>
+          <a-asset-item id="model-onemtl" src="models/model/model.mtl"></a-asset-item>
+
+          <a-asset-item id="modelTwo" src="models/ModelTwo/Model.obj"></a-asset-item>
+          <a-asset-item id="modelThree" src="models/ModelThree/Model.obj"></a-asset-item>
+          <a-asset-item id="modelFour" src="models/ModelFour/Model.obj"></a-asset-item>
+          <a-asset-item id="modelFive" src="models/ModelFive/Model.obj"></a-asset-item>
+          <a-asset-item id="modelSix" src="models/ModelSix/Model.obj"></a-asset-item>
+          <a-asset-item id="modelSeven" src="models/ModelSeven/Model.obj"></a-asset-item>
+          <a-sound src=“url(bobby.mp3)”><a-sound>
 
 
 
       </a-assets>
 
-            <a-entity gltf-model="models/shiny_forest/scene.gltf" modify-materials="" position="0 -3.12144 -23.35185" scale="0.5 0.5 0.5" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 50000" sound="src: url(bobby.mp3); autoplay: true"></a-entity>
+      <a-obj-model src="#model-obj" mtl="#model-onemtl"></a-obj-model>
 
-            <a-entity gltf-model="#milkModel" position="12 1.2 -23" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000" scale="8 8 8" material="" geometry="" event-set__enter="_event: mouseenter; _target: #milkText; visible: true" event-set__leave="_event: mouseleave; _target: #milkText; visible: false">
-                <a-text id="milkText" value="attribute no blame and strive to absolve only resentment" align="center" color="#fff" visible="false" position="0.008 0.279 0.041" scale=".1 .1 .1" geometry="primitive: plane; width: 0" material="blending: subtractive; color: #530738; opacity: 0.4" text=""></a-text>
-            </a-entity>
 
-            <a-entity gltf-model="#pengyModel" position="10.2 1.2 -16" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000" scale="1 1 1" material="" geometry="" event-set__enter="_event: mouseenter; _target: #pengyText; visible: true" event-set__leave="_event: mouseleave; _target: #pengyText; visible: false">
-                <a-text id="pengyText" value="attachment leads 2 jealousy, the shadow of greed. train yourself to let go of everything you fear to lose" align="center" color="#fff" visible="false" position="0 1.5 1" geometry="primitive: plane; width: 0" material="blending: subtractive; color: #530738; opacity: 0.4" text=""></a-text>
-            </a-entity>
-
-            <a-entity gltf-model="#cuteModel" position="4.2 1.2 -10" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000" scale="0.5 0.5 0.5" material="" geometry="" event-set__enter="_event: mouseenter; _target: #cuteText; visible: true" event-set__leave="_event: mouseleave; _target: #cuteText; visible: false">
-                <a-text id="cuteText" value="internalize guilt if it results in growth" align="center" color="#fff" visible="false" position="0 2.3 1" geometry="primitive: plane; width: 0" material="blending: subtractive; color: #530738; opacity: 0.4" text=""></a-text>
-            </a-entity>
-
-            <a-entity gltf-model="#wandModel" position="-4.2 -1 -10" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000" scale="0.6 0.6 0.6" material="" geometry="" event-set__enter="_event: mouseenter; _target: #wandText; visible: true" event-set__leave="_event: mouseleave; _target: #wandText; visible: false">
-                <a-text id="wandText" value="blessed are the meek for they will inherit the earth" align="center" color="#fff" visible="false" position="0 2.3 1" geometry="primitive: plane; width: 0" material="blending: subtractive; color: #530738; opacity: 0.4" text=""></a-text>
-            </a-entity>
-
-            <a-entity gltf-model="#teaModel" position="-10.2 1.5 -16" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000" scale="0.2 0.2 0.2" material="" geometry="" event-set__enter="_event: mouseenter; _target: #teaText; visible: true" event-set__leave="_event: mouseleave; _target: #teaText; visible: false">
-                <a-text id="teaText" value="the Fall is in itself already its own self sublation the wound already its own healing" align="center" color="#fff" visible="false" position="0 2.3 1" geometry="primitive: plane; width: 0" material="blending: subtractive; color: #530738; opacity: 0.4" text=""></a-text>
-            </a-entity>
 
             <a-sky color="#ECECEC"></a-sky>
 
